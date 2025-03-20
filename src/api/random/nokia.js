@@ -19,8 +19,12 @@ module.exports = function (app) {
                 responseType: 'arraybuffer' // Mengharapkan gambar sebagai respons
             });
 
-            res.setHeader('Content-Type', 'image/png'); // Pastikan tipe gambar
-            res.send(response.data); // Kirim gambar langsung
+            // Ambil Content-Type dari respons API
+            const contentType = response.headers["content-type"] || "image/png";
+
+            res.setHeader("Content-Type", contentType);
+            res.setHeader("Content-Disposition", 'inline; filename="nokia_image.png"'); // Agar bisa ditampilkan langsung
+            res.send(response.data);
         } catch (error) {
             console.error("Error fetching Nokia image:", error);
             res.status(500).json({
