@@ -1,5 +1,5 @@
 {
-  "name": "Dcvx Api's - Free Rest API",
+  "name": "Dcvx API's - Free Rest API",
   "version": "Dcvx UI",
   "description": "Simple and Easy-to-Use API Documentation",
   "header": {
@@ -20,7 +20,7 @@
     {
       "name": "📣 Follow My Channel",
       "url": "https://whatsapp.com/channel/0029VbA6ZQp72WTpwhiTlo3W"
-    },
+    }
   ],
   "categories": [
     {
@@ -28,12 +28,12 @@
       "items": [
         {
           "name": "LuminAI",
-          "desc": "Talk with luminai",
+          "desc": "Talk with LuminAI",
           "path": "/ai/luminai?text="
         },
         {
           "name": "HydroMind",
-          "desc": "Talk with hydromind",
+          "desc": "Talk with HydroMind",
           "path": "/ai/hydromind?text=&model=",
           "innerDesc": "See the list of supported AI models here: https://mind.hydrooo.web.id"
         }
