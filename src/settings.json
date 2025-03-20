@@ -41,11 +41,6 @@
           "desc": "Generate images from text prompts.",
           "path": "/maker/text-to-image?prompt="
         },
-        {
-          "name": "✍️ Text Generator",
-          "desc": "Generate AI-powered text based on a given prompt.",
-          "path": "/maker/text-gen?text="
-        }
       ]
     },
     {
