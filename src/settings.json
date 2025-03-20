@@ -40,6 +40,11 @@
           "name": "✨ Brat",
           "desc": "Generate Brat Image With Text",
           "path": "/random/brat?text="
+        },
+        {
+          "name": "🖼️ Text to Image",
+          "desc": "Generate an image from text using AI.",
+          "path": "/generate/txt2img?prompt="
         }
       ]
     },
