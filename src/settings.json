@@ -1,23 +1,32 @@
 {
   "name": "Dcvx REST API",
   "version": "1.0",
-  "description": "🔹 A simple, fast, and easy-to-use API documentation. Get started in seconds! 🚀",
+  "description": "🚀 Powerful & Free REST API for Developers!",
   "header": {
-    "title": "Welcome to Dcvx REST API",
-    "subtitle": "Free & Open Source REST API for Developers"
+    "title": "🌐 Welcome to Dcvx REST API",
+    "subtitle": "Explore our free & open-source API collection",
+    "status": "🟢 Online",
+    "banner": "https://telegra.ph/file/d7231de907248dd8c7c42.jpg"
   },
   "apiSettings": {
-    "creator": "Fahrizal"
+    "creator": "Fahrizal",
+    "website": "https://restdcvx.vercel.app",
+    "support": "https://t.me/@xiacoo18"
   },
   "links": [
     {
       "name": "📣 Follow My Channel",
       "url": "https://whatsapp.com/channel/0029VbA6ZQp72WTpwhiTlo3W"
+    },
+    {
+      "name": "💬 Join Support Group",
+      "url": "https://t.me/dcvx_support"
     }
   ],
   "categories": [
     {
-      "name": "🤖 AI (Artificial Intelligence)",
+      "name": "🤖 Artificial Intelligence",
+      "highlight": true,
       "items": [
         {
           "name": "✨ LuminAI",
@@ -27,21 +36,21 @@
       ]
     },
     {
-      "name": "🎨 Maker",
+      "name": "🎨 Image Maker",
       "items": [
         {
           "name": "✨ Brat",
-          "desc": "Generate Brat Image With Text",
+          "desc": "Generate Brat-style images with text input.",
           "path": "/random/brat?text="
         }
       ]
     },
     {
-      "name": "🎲 Random",
+      "name": "🎲 Random Generator",
       "items": [
         {
           "name": "💙 Blue Archive",
-          "desc": "Get random Blue Archive images!",
+          "desc": "Get a random Blue Archive image!",
           "path": "/random/ba"
         }
       ]
