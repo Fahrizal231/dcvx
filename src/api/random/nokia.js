@@ -27,8 +27,14 @@ module.exports = function (app) {
       console.log("Requesting:", apiURL);
 
       const response = await axios.get(apiURL, {
-        responseType: "arraybuffer", // Mengharapkan gambar sebagai respons
-      });
+  responseType: "arraybuffer",
+}).catch(err => {
+  console.error("API Error:", err.response ? err.response.data : err.message);
+  return res.status(500).json({
+    status: false,
+    error: `API Error: ${err.response ? err.response.data : err.message}`,
+  });
+});
 
       res.setHeader("Content-Type", "image/png"); // Pastikan tipe gambar
       res.send(response.data); // Kirim gambar langsung
