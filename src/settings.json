@@ -42,9 +42,9 @@
           "path": "/random/brat?text="
         },
         {
-          "name": "🖼️ Text to Image",
-          "desc": "Generate an image from text using AI.",
-          "path": "/random/txt2img?text="
+          "name": "🖼️ Nokia",
+          "desc": "Generate an nokia wallpaper ",
+          "path": "/random/nokia?text="
         }
       ]
     },
