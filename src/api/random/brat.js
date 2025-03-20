@@ -7,7 +7,7 @@ module.exports = function (app) {
             if (!text) {
                 return res.status(400).json({
                     status: false,
-                    error: "[ ❌ ] Mana Textnya?"
+                    error: "[ X ] Mana Textnya?"
                 });
             }
 
