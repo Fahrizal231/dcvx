@@ -1,11 +1,11 @@
 {
-  "name": "Rynn Api's",
-  "version": "Rynn UI",
+  "name": "Dcvx Api's - Free Rest API",
+  "version": "Dcvx UI",
   "description": "Simple and Easy-to-Use API Documentation",
   "header": {
     "status": "Online!",
     "imageSrc": [
-      "https://media4.giphy.com/media/l0Iy33dWjmywkCnNS/giphy.gif?cid=6c09b952p3mt40j1mgznfi9rwwtccbjl7mtc2kvfugymeinr&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g"
+      "https://telegra.ph/file/d7231de907248dd8c7c42-f3cbeb54329826d364.jpg"
     ],
     "imageSize": {
       "mobile": "80%",
@@ -14,17 +14,13 @@
     }
   },
   "apiSettings": {
-    "creator": "Rynn"
+    "creator": "Fahrizal"
   },
   "links": [
     {
-      "name": "Source Code",
-      "url": "https://github.com/rynxzyy/Rynn-UI"
+      "name": "📣 Follow My Channel",
+      "url": "https://whatsapp.com/channel/0029VbA6ZQp72WTpwhiTlo3W"
     },
-    {
-      "name": "Contact Me",
-      "url": "https://wa.me/6285173370004"
-    }
   ],
   "categories": [
     {
