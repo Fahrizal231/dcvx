@@ -3,28 +3,19 @@ const axios = require('axios');
 module.exports = function (app) {
     app.get('/random/txt2img', async (req, res) => {
         try {
-            const { text } = req.query;
-            if (!text) {
-                return res.status(400).json({
-                    status: false,
-                    error: "[ X ] Berikan Prompt! Untuk Generate Image!"
-                });
-            }
-
-            // Panggil API eksternal
-            const apiURL = `https://api.betabotz.eu.org/api/maker/text2img?text=${encodeURIComponent(text)}&apikey=Btz-Fahrizal`;
+            const apiURL = `https://api.betabotz.eu.org/api/random/txt2img?apikey=Btz-Fahrizal`;
 
             const response = await axios.get(apiURL, {
-                responseType: 'arraybuffer' // Menerima data dalam format biner
+                responseType: 'arraybuffer' // Menerima gambar langsung
             });
 
-            res.setHeader('Content-Type', 'image/png'); // Menentukan tipe konten
-            res.send(response.data); // Mengirim gambar ke user
+            res.setHeader('Content-Type', 'image/png'); // Pastikan tipe gambar
+            res.send(response.data); // Kirim gambar langsung
         } catch (error) {
-            console.error("Error generating image:", error);
+            console.error("Error fetching random image:", error);
             res.status(500).json({
                 status: false,
-                error: "Gagal menghasilkan gambar dari API eksternal."
+                error: "Gagal mengambil gambar dari API eksternal."
             });
         }
     });
