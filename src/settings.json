@@ -14,7 +14,7 @@
     }
   },
   "apiSettings": {
-    "creator": "👨‍💻 Fahrizal"
+    "creator": "Fahrizal"
   },
   "links": [
     {
@@ -40,11 +40,6 @@
           "name": "✨ Brat",
           "desc": "Generate Brat Image With Text",
           "path": "/random/brat?text="
-        },
-        {
-          "name": "🖼️ Nokia",
-          "desc": "Generate an nokia wallpaper ",
-          "path": "/random/nokia?text="
         }
       ]
     },
