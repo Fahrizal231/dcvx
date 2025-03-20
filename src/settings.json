@@ -44,7 +44,7 @@
         {
           "name": "🖼️ Text to Image",
           "desc": "Generate an image from text using AI.",
-          "path": "/generate/txt2img?prompt="
+          "path": "/random/txt2img?text="
         }
       ]
     },
