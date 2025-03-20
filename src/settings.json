@@ -1,17 +1,10 @@
 {
-  "name": "Dcvx API's - Free Rest API",
-  "version": "Dcvx UI",
+  "name": "Dcvx REST API",
+  "version": "1.0",
   "description": "🔹 A simple, fast, and easy-to-use API documentation. Get started in seconds! 🚀",
   "header": {
-    "status": "🟢 Online!",
-    "imageSrc": [
-      "https://telegra.ph/file/d7231de907248dd8c7c42-f3cbeb54329826d364.jpg"
-    ],
-    "imageSize": {
-      "mobile": "80%",
-      "tablet": "40%",
-      "desktop": "40%"
-    }
+    "title": "Welcome to Dcvx REST API",
+    "subtitle": "Free & Open Source REST API for Developers"
   },
   "apiSettings": {
     "creator": "Fahrizal"
