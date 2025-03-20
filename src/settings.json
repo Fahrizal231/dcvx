@@ -37,9 +37,9 @@
       "name": "🎨 Maker",
       "items": [
         {
-          "name": "🖼️ Text to Image (Error)",
-          "desc": "Generate images from text prompts.",
-          "path": "/maker/text-to-image?prompt="
+          "name": "✨ Brat",
+          "desc": "Generate Brat Image With Text",
+          "path": "/random/brat?text="
         }
       ]
     },
