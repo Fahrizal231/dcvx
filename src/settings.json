@@ -1,9 +1,9 @@
 {
   "name": "Dcvx API's - Free Rest API",
   "version": "Dcvx UI",
-  "description": "Simple and Easy-to-Use API Documentation",
+  "description": "🔹 A simple, fast, and easy-to-use API documentation. Get started in seconds! 🚀",
   "header": {
-    "status": "Online!",
+    "status": "🟢 Online!",
     "imageSrc": [
       "https://telegra.ph/file/d7231de907248dd8c7c42-f3cbeb54329826d364.jpg"
     ],
@@ -14,47 +14,60 @@
     }
   },
   "apiSettings": {
-    "creator": "Fahrizal"
+    "creator": "👨‍💻 Fahrizal"
   },
   "links": [
     {
       "name": "📣 Follow My Channel",
       "url": "https://whatsapp.com/channel/0029VbA6ZQp72WTpwhiTlo3W"
+    },
+    {
+      "name": "🌍 Visit Our Website",
+      "url": "https://dcvx-api.vercel.app/"
     }
   ],
   "categories": [
     {
-      "name": "AI (Artificial Intelligence)",
+      "name": "🤖 AI (Artificial Intelligence)",
       "items": [
         {
-          "name": "LuminAI",
-          "desc": "Talk with LuminAI",
+          "name": "✨ LuminAI",
+          "desc": "Chat with LuminAI, an intelligent AI assistant.",
           "path": "/ai/luminai?text="
-        },
-        {
-          "name": "HydroMind",
-          "desc": "Talk with HydroMind",
-          "path": "/ai/hydromind?text=&model=",
-          "innerDesc": "See the list of supported AI models here: https://mind.hydrooo.web.id"
         }
       ]
     },
     {
-      "name": "Random",
+      "name": "🎨 Maker",
       "items": [
         {
-          "name": "Blue Archive",
-          "desc": "Blue Archive Random Images",
+          "name": "🖼️ Text to Image",
+          "desc": "Generate images from text prompts.",
+          "path": "/maker/text-to-image?prompt="
+        },
+        {
+          "name": "✍️ Text Generator",
+          "desc": "Generate AI-powered text based on a given prompt.",
+          "path": "/maker/text-gen?text="
+        }
+      ]
+    },
+    {
+      "name": "🎲 Random",
+      "items": [
+        {
+          "name": "💙 Blue Archive",
+          "desc": "Get random Blue Archive images!",
           "path": "/random/ba"
         }
       ]
     },
     {
-      "name": "Search Tools",
+      "name": "🔎 Search Tools",
       "items": [
         {
-          "name": "YouTube",
-          "desc": "Video search",
+          "name": "🎬 YouTube Search",
+          "desc": "Find YouTube videos instantly!",
           "path": "/search/youtube?q="
         }
       ]
