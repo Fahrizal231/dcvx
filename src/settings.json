@@ -1,56 +1,59 @@
 {
-  "name": "Dashboard RestAPIs",
+  "name": "Dcvx API's - Free Rest API",
   "version": "Dcvx UI",
-  "description": "🚀 Powerful & Free REST API for Developers!",
+  "description": "🔹 A simple, fast, and easy-to-use API documentation. Get started in seconds! 🚀",
   "header": {
-    "title": "🌐 Welcome to Dcvx REST API",
-    "subtitle": "Explore our free & open-source API collection",
-    "status": "🟢 Online",
-    "banner": "https://telegra.ph/file/d7231de907248dd8c7c42.jpg"
+    "status": "🟢 Online!",
+    "imageSrc": [
+      "https://telegra.ph/file/d7231de907248dd8c7c42-f3cbeb54329826d364.jpg"
+    ],
+    "imageSize": {
+      "mobile": "80%",
+      "tablet": "40%",
+      "desktop": "40%"
+    }
   },
   "apiSettings": {
-    "creator": "Fahrizal",
-    "website": "https://restdcvx.vercel.app",
-    "support": "https://t.me/@xiacoo18"
+    "creator": "👨‍💻 Fahrizal"
   },
   "links": [
     {
       "name": "📣 Follow My Channel",
       "url": "https://whatsapp.com/channel/0029VbA6ZQp72WTpwhiTlo3W"
-    },
-    {
-      "name": "💬 Join Support Group",
-      "url": "https://t.me/dcvx_support"
     }
   ],
   "categories": [
     {
-      "name": "🤖 Artificial Intelligence",
-      "highlight": true,
+      "name": "🤖 AI (Artificial Intelligence)",
       "items": [
         {
           "name": "✨ LuminAI",
           "desc": "Chat with LuminAI, an intelligent AI assistant.",
           "path": "/ai/luminai?text="
+        },
+        {
+          "name": "🖤 Blackbox AI",
+          "desc": "AI-powered response generator",
+          "path": "/ai/blackbox?query="
         }
       ]
     },
     {
-      "name": "🎨 Image Maker",
+      "name": "🎨 Maker",
       "items": [
         {
-          "name": "✨ Brat",
-          "desc": "Generate Brat-style images with text input.",
+          "name": "🖼️ Brat Maker",
+          "desc": "Generate brat images from text.",
           "path": "/random/brat?text="
         }
       ]
     },
     {
-      "name": "🎲 Random Generator",
+      "name": "🎲 Random",
       "items": [
         {
           "name": "💙 Blue Archive",
-          "desc": "Get a random Blue Archive image!",
+          "desc": "Get random Blue Archive images!",
           "path": "/random/ba"
         }
       ]
