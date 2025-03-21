@@ -14,17 +14,11 @@
     }
   },
   "apiSettings": {
-    "creator": "👨‍💻 Fahrizal"
+    "creator": "Fahrizal"
   },
-  "links": [
-    {
-      "name": "📣 Follow My Channel",
-      "url": "https://whatsapp.com/channel/0029VbA6ZQp72WTpwhiTlo3W"
-    }
-  ],
   "categories": [
     {
-      "name": "🤖 AI (Artificial Intelligence)",
+      "name": "[ 🤖 ] Category AI",
       "items": [
         {
           "name": "✨ LuminAI",
@@ -39,7 +33,7 @@
       ]
     },
     {
-      "name": "🎨 Maker",
+      "name": "[ 🎨 ] Category Maker",
       "items": [
         {
           "name": "🖼️ Brat Maker",
@@ -49,7 +43,7 @@
       ]
     },
     {
-      "name": "🎲 Random",
+      "name": "[ 🎲 ] Category Random",
       "items": [
         {
           "name": "💙 Blue Archive",
@@ -59,7 +53,7 @@
       ]
     },
     {
-      "name": "🔎 Search Tools",
+      "name": "[ 🔎 ] Category Tools",
       "items": [
         {
           "name": "🎬 YouTube Search",
