@@ -11,30 +11,26 @@ module.exports = function (app) {
                 });
             }
 
-            // Fetch data dari API eksternal
             const response = await axios.get(`https://jazxcode.biz.id/ai/blackbox?query=${encodeURIComponent(query)}`);
-            const responseData = response.data;
+            let responseData = response.data;
 
-            console.log("Response from external API:", responseData); // Debugging log
+            console.log("Response from JaxzCode API:", responseData); // Debugging
 
-            // Periksa apakah result ada
-            if (responseData && typeof responseData === 'object' && responseData.result) {
-                return res.json({
-                    status: true,
-                    creator: "👨‍💻 Fahrizal",
-                    response: responseData.result.response || "No response received."
+            // Pastikan responseData memiliki format yang sesuai
+            if (!responseData || typeof responseData !== "object" || !responseData.response) {
+                return res.status(500).json({
+                    status: false,
+                    error: "No valid response from external API."
                 });
             }
 
-            // Jika tidak ada `result`, anggap API eksternal gagal
-            return res.json({
-                status: false,
+            res.json({
+                status: true,
                 creator: "👨‍💻 Fahrizal",
-                error: "Invalid response structure from external API."
+                response: responseData.response
             });
-
         } catch (error) {
-            console.error("Error fetching Blackbox AI:", error.response ? error.response.data : error.message);
+            console.error("Error fetching Blackbox AI:", error);
             res.status(500).json({
                 status: false,
                 error: "Failed to fetch response from Blackbox AI."
