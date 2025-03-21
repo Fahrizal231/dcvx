@@ -12,20 +12,18 @@ module.exports = function (app) {
             }
 
             const response = await axios.get(`https://jazxcode.biz.id/ai/blackbox?query=${encodeURIComponent(query)}`);
-            let responseData = response.data;
+            const responseData = response.data;
 
-            // Pastikan result ada sebelum mengubahnya
-            if (responseData.result && responseData.result.creator) {
-                responseData.result.creator = "Fahrizal"; // Ubah creator di dalam result
-            }
+            // Ambil hanya 'response' dari API eksternal untuk menghindari duplikasi
+            const aiResponse = responseData?.result?.response || "No response received.";
 
             res.json({
                 status: true,
                 creator: "👨‍💻 Fahrizal",
-                result: response.data
+                response: aiResponse
             });
         } catch (error) {
-            console.error("Error fetching Blackbox AI:", error);
+            console.error("Error fetching Blackbox AI:", error.message);
             res.status(500).json({
                 status: false,
                 error: "Failed to fetch response from Blackbox AI."
