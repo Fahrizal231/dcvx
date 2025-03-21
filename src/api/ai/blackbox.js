@@ -17,20 +17,20 @@ module.exports = function (app) {
 
             console.log("Response from external API:", responseData); // Debugging log
 
-            // Pastikan `responseData.result.response` ada
-            if (responseData && responseData.result && responseData.result.response) {
+            // Periksa apakah result ada
+            if (responseData && typeof responseData === 'object' && responseData.result) {
                 return res.json({
                     status: true,
                     creator: "👨‍💻 Fahrizal",
-                    response: responseData.result.response
+                    response: responseData.result.response || "No response received."
                 });
             }
 
-            // Jika tidak ada response dari API eksternal
+            // Jika tidak ada `result`, anggap API eksternal gagal
             return res.json({
                 status: false,
                 creator: "👨‍💻 Fahrizal",
-                error: "No valid response from external API."
+                error: "Invalid response structure from external API."
             });
 
         } catch (error) {
