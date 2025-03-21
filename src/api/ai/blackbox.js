@@ -1,11 +1,6 @@
 const axios = require('axios');
 
 module.exports = function (app) {
-    async function blackboxAI(query) {
-        const { data } = await axios.get(`https://jazxcode.biz.id/ai/blackbox?query=${encodeURIComponent(query)}`);
-        return data;
-    }
-
     app.get('/ai/blackbox', async (req, res) => {
         try {
             const { query } = req.query;
@@ -16,15 +11,23 @@ module.exports = function (app) {
                 });
             }
 
-            const result = await blackboxAI(query);
-            res.status(200).json({
+            const response = await axios.get(`https://jazxcode.biz.id/ai/blackbox?query=${encodeURIComponent(query)}`);
+            
+            // Pastikan response data sesuai sebelum mengubahnya
+            if (response.data && response.data.creator) {
+                response.data.creator = "Fahrizal"; // Ubah creator jadi "Fahrizal"
+            }
+
+            res.json({
                 status: true,
-                result
+                creator: "👨‍💻 Fahrizal",
+                result: response.data
             });
         } catch (error) {
+            console.error("Error fetching Blackbox AI:", error);
             res.status(500).json({
                 status: false,
-                error: "Failed to fetch response from Blackbox AI"
+                error: "Failed to fetch response from Blackbox AI."
             });
         }
     });
