@@ -12,22 +12,16 @@ module.exports = function (app) {
             }
 
             const response = await axios.get(`https://jazxcode.biz.id/ai/blackbox?query=${encodeURIComponent(query)}`);
-            console.log(response.data); // Debugging untuk melihat respons asli dari API eksternal
-
-            if (!response.data || !response.data.result) {
-                return res.status(500).json({
-                    status: false,
-                    error: "Invalid response from Blackbox AI"
-                });
+            
+            // Pastikan response data sesuai sebelum mengubahnya
+            if (response.data && response.data.creator) {
+                response.data.creator = "Fahrizal"; // Ubah creator jadi "Fahrizal"
             }
-
-            let responseData = response.data;
-            responseData.result.creator = "Fahrizal"; // Pastikan creator diubah
 
             res.json({
                 status: true,
                 creator: "👨‍💻 Fahrizal",
-                result: responseData.result
+                result: response.data
             });
         } catch (error) {
             console.error("Error fetching Blackbox AI:", error);
