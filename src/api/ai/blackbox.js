@@ -12,16 +12,17 @@ module.exports = function (app) {
             }
 
             const response = await axios.get(`https://jazxcode.biz.id/ai/blackbox?query=${encodeURIComponent(query)}`);
-            
-            // Pastikan response data sesuai sebelum mengubahnya
-            if (response.data && response.data.creator) {
-                response.data.creator = "Fahrizal"; // Ubah creator jadi "Fahrizal"
+            let responseData = response.data;
+
+            // Pastikan result ada sebelum mengubahnya
+            if (responseData.result && responseData.result.creator) {
+                responseData.result.creator = "Fahrizal"; // Ubah creator di dalam result
             }
 
             res.json({
                 status: true,
                 creator: "👨‍💻 Fahrizal",
-                result: response.data
+                result: responseData.result
             });
         } catch (error) {
             console.error("Error fetching Blackbox AI:", error);
