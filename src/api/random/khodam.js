@@ -11,7 +11,7 @@ module.exports = function(app) {
         }
     }
 
-    app.get('/random/khodam', async (req, res) => {
+    app.get('memek', async (req, res) => {
         try {
             const { name } = req.query;
             if (!name) {
